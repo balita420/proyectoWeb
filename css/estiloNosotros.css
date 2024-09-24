@@ -1,0 +1,33 @@
+.izquierda{
+    background-color: rgba(255, 238, 233, 0.842);
+    height: 100%;
+    width: 40%;
+}
+.derecha{
+  background: url(../imagenes/CREADORA.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 60%;
+  height: auto;
+}
+#contenido{
+    display: flex;
+}
+main h3{
+    font-size: 80px;
+    font-weight: 600;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    color: rgb(255, 255, 255);
+    text-shadow:  1px 1px 1px rgba(0, 0, 0, 0.644);
+}
+main p{
+    color: rgba(0, 0, 0, 0.61);
+    font-size: 20px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 100px;
+    line-height: 30px;
+}

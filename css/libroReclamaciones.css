@@ -1,0 +1,85 @@
+
+main{
+  padding-top: 150px;
+  padding-bottom: 150px;
+  width: 100%;
+}
+.formulario{
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.formulario h3{
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+.formulario p{
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 600px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.datos{
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+  margin: 1rem 0;
+}
+.datoLargo{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.datoLargo textarea{
+  resize: none;
+  padding-top: 0.5 rem;
+  font-size: 1.1rem;
+  padding-left: 0.5 rem;
+  border:1px solid rgba(0, 0, 0, 0.301);
+  margin: 1rem 0;
+}
+
+.datoLargo input {
+  height: 45px;
+  font-size: 15px;
+  font-size: 13px;
+}
+.datos input{
+    height: 45px;
+    font-size: 15px;
+    font-size: 13px;
+}
+.datos select{
+  height: 45px;
+  font-size: 15px;
+  font-size: 13px;
+}
+.siguiente{
+  display: flex;
+  width: 100%;
+  margin: 3rem 0;
+}
+.siguiente button{
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: #ffffff;
+}
+.siguiente button:hover{
+  padding: 12px;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  transition: 0.8s;
+}
+

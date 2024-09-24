@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titulo">ALISON - YOUR ESSENCE</title>
+    <script src="https://kit.fontawesome.com/400743649d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Mali&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estiloNav.css">
+    <link rel="stylesheet" href="../css/estilosFooter.css">
+    <link rel="stylesheet" href="../css/estiloProducto.css">
+</head>
+<body> 
+    <nav class="container-menu">         
+        <div class="logo">
+            <a href="../html/index.html"><img src="../imagenes/logo.png" alt="logo" ></a>
+        </div>
+        <div class="menu">
+            <input type="checkbox" id="check__menu">
+            <label id="#label__check" for="check__menu"><i class="fa-solid fa-bars icon__menu"></i></label>
+            <ul> 
+                <li><a href="#">ZAPATOS</a>
+                    <ul>
+                        <li><a href="../html/productos.html?p=botines">BOTINES</a></li>
+                        <li><a href="../html/productos.html?p=oxforts">OXFORTS</a></li>
+                        <li><a href="../html/productos.html?p=plataforma">PLATAFORMA</a></li>
+                        <li><a href="../html/productos.html?p=sandalias">SANDALIAS</a></li>
+                        <li><a href="../html/productos.html?p=zapatillas">ZAPATILLAS</a></li>
+                        <li><a href="../html/productos.html?p=loafers">LOAFERS</a></li>
+                    </ul>
+                <li><a href="#">COLECCIONES</a>
+                    <ul>
+                        <li><a href="../html/productos.html?p=invierno">INVIERNO</a></li>
+                        <li><a href="../html/productos.html?p=verano">VERANO</a></li>
+                        <li><a href="../html/productos.html?p=mediaEstacion">MEDIA ESTACIÓN</a></li>
+                    </ul>
+                </li>
+                </li>
+                <li><a href="#">COMPLEMENTOS</a>
+                    <ul>
+                        <li><a href="../html/productos.html?p=carteras">CARTERAS</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#">SALE</a>
+                    <ul>
+                        <li><a href="../html/productos.html?p=salezapatos">ZAPATOS</a></li>
+                        <li><a href="../html/productos.html?p=salecarteras">CARTERAS</a></li>
+                    </ul>
+                </li>
+                <li><a href="../html/productos.html?p=nuevo">NEW IN</a></li>
+                <li><a href="../html/productos.html?p=todo">TODO</a></li>
+            </ul>   
+        </div>
+        <div  class="iconos">
+            <ul>
+                <li><a  href="#"class="search"><i  class="busqueda fa-solid fa-magnifying-glass"><input type="text"></i></a></li>
+                <li><a href="../html/carrito.html"class="cart"><i class="fa-solid fa-cart-shopping"></i></i><span class="cantidadCarrito">0</span></a></li>
+                <li><a href="../html/iniciarSesion.html"class="user"><i class="fa-solid fa-user"></i></a></li>  
+            </ul>
+        </div>
+    </nav>
+    <div class="barraNavegacion">
+        
+            <a href="../html/index.html">HOME |</a>
+            <a id="tipo" href=""></a>
+            <span id="nombreBarra"></span> 
+       
+    </div>    
+    <main>
+       
+        <section>
+            <div class="contenido">
+                <div class="imagenes">
+                    <img id="imagenProducto" class="foto" src="" alt="">
+                    
+                </div>
+                        
+                <div class="descripcion">
+                    <p class="marca">YOUR ESSENCE</p>
+                    <p id="nombrePrincipal" class="nombre"></p>
+                    <ul>
+                        <li><p class="letraPequeña">Disponibilidad <strong style="color: red;"> Stock Disponible </strong> </p></li>
+                        <li><p id="precio" class="precio"></p></li>
+                        <li><p id="precioAnterior" class="letraPequeña"></p></li>
+                        <li><p class="letraPequeña">Precio incluido IGV</p></li>
+                        <li><p class="letraPequeña2">MATERIAL: CUERO</p></li>
+                        <li><p id="talla" class="letraPequeña2">TALLA:</p></li>
+                        <li id="tallacont"></li>
+                        <li><p class="letraPequeña2">COLOR:</p></li>
+                        <li class="color"><p id="gamaColor" class="colores"> </p></li>
+                    </ul>
+                    <div class="botoncarrito"> 
+                        <li><p id="talla" class="letraPequeña2">CANTIDAD:</p></li>
+                        <li><input id="botonCantidad" class="botonCantidad" type="number" value="1" min="1"><a href="carrito.html" id="botonCar" >AÑADIR AL CARRITO</a></li>
+                    </div>
+                    <div class="info">
+                        <p class="subtitinfo">Descripcion del producto</p>
+                        <ul>
+                            <li><p id="forro"></p></li>
+                            <li><p id="plantilla"></p></li>
+                            <li><p id="taco"></p></li>
+                            <li><p id="plataforma"></p></li>
+                        </ul>
+                    </div>
+                    <div class="ademas">
+                        <ul>
+                            <li>Delivery gratis por compras mayores a S/600.</li>
+                            <li>Hecho artesanalmente en Perú</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="masModelos">
+            <article>
+                <hr>
+                <h2>PRODUCTOS SIMILARES</h2>
+                <hr>
+            </article>
+            <div id="productosSimilaresContenedor">
+            </div>
+        </section>
+    </main>
+     
+    <footer>
+        <div class="footer-container">
+            <div class="content-foo">
+                <p>ATENCION AL CLIENTE</p>
+                <a href="preguntasFrecuentes.html">Preguntas</a>
+                <a href="terminosCondiciones.html">Términos y Coindiciones</a>
+                <a href="libroReclamaciones.html">Libro de Reclamaciones</a>
+                <a href="contacto.html">Contáctanos</a>
+            </div>
+
+            <div class="content-foo">
+                <p>MI CUENTA</p>
+                <a href="productos.html?p=todo">Tienda</a>
+                <a href="iniciarSesion.html">Mi Cuenta</a>
+            </div>
+            
+            <div class="content-foo">
+                <p>YOUR ESSENCE</p>
+                <a href="sobreNosotros.html">Sobre Nosotros</a>   
+                <div class="redes-sociales">
+                    <div class="bubble">
+                        <a href="#"class="facebook"><i class="fa-brands fa-facebook-f"></i></i></a>
+                    </div>
+                    <div class="bubble">
+                        <a href="#"class="instagram"><i class="fa-brands fa-instagram"></i></i></a> 
+                    </div>
+                    <div class="bubble">
+                        <a href="#"class="email"><i class="fa-solid fa-envelope"></i></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyrigth">
+            <p><i class="far fa-copyrigth"></i>© YOUR ESSENCE</p>
+        </div>
+    </footer>
+    <script src="../js/producto.js"></script>
+    <script src="../js/carritoCompras.js"></script>
+    <script src="../js/complementos.js"></script>
+</body>
+</html>

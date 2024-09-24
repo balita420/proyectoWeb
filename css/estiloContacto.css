@@ -1,0 +1,78 @@
+main{
+    margin: 0;
+    padding: 3.5rem 0;    
+}
+h1{
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 40px 0;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 600px;
+    padding: 0 1rem;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 80px;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin: 1rem 0;
+}
+.contenedor label{
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+.contenedor input{
+    font-size: 1.1rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+    border:1px solid rgba(0, 0, 0, 0.301);
+}
+.contenedorLargo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+}
+.contenedorLargo label{
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+.contenedorLargo input{
+    font-size: 1.1rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+    border:1px solid rgba(0, 0, 0, 0.301);
+}
+.contenedorLargo textarea{
+    resize: none;
+    padding-top: 0.5rem;
+    font-size: 1.1rem;
+    padding-left: 0.5rem;
+    border:1px solid rgba(0, 0, 0, 0.301);
+}
+.contenedorBoton{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem auto;
+}
+.contenedorBoton input{
+    font-weight: 500;
+    font-size: 1rem;
+    height: 3rem;
+    background-color: black;
+    color: white;
+}
+.contenedorBoton input:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: 1s;
+}

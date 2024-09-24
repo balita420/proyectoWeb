@@ -1,0 +1,178 @@
+
+main{
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px;
+    background-color: rgb(255, 255, 255);
+}
+section{
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.precio {
+    font-size: 30px;
+    text-align: center;
+}
+.marca{
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 5px;
+}
+.nombre{
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    font-family: 'Comic Neue', cursive;
+}
+.color{
+    display: flex;
+}
+.color p{
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.contenido{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.imagenes {
+    width: 450px;
+    margin: 0px 80px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.imagenes img{
+    width: 450px;
+    border-radius: 5px;
+}
+.imagenes img:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.fotospequeñas img{
+    width: 110px;
+    border-radius: 5px;
+    margin: 5px;
+    
+}
+.fotospequeñas img:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.fotospequeñas{
+    display: flex;
+    justify-content: left;
+     
+}
+.descripcion{
+    width: 350px;
+    
+}
+.descripcion li{
+    list-style: none;
+}
+.letraPequeña {
+    font-size: 14px;
+    margin: 20px;
+    color: rgb(133, 133, 133);
+}
+.letraPequeña2{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+.botonTalla{
+    width: 80px;
+    height: 38px;
+    font-size: 21px;
+    text-align: center;
+    margin-left: 10px;
+}
+.botonCantidad{
+    width: 80px;
+    height: 38px;
+    font-size: 21px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.botoncarrito{
+    padding-bottom: 20px;
+}
+#botonCar{
+    flex-wrap: nowrap;
+    background-color: black;
+    padding: 7px 20px;
+    color: white;
+    border-radius: 2px;
+}
+.boton:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    
+}
+
+.info{
+    margin-top: 40px;
+}
+.subtitinfo{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+.info li{
+    font-size: 16px;
+    margin: 5px;
+    list-style: none;
+}
+.ademas{
+    margin-top: 30px;
+}
+.ademas li{
+    margin-left: 20px;
+    list-style-type: circle;
+    font-size: 13px;
+    color: rgb(83, 82, 82);
+}
+article{
+    text-align: center;
+    margin: 60px;
+}
+h2{
+    font-weight: 400;
+    margin: 10px;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.masModelos div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.masModelos div img{
+    width: 200px;
+    margin: 20px;
+}
+.masModelos div img:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+

@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.logo img{
+    height: 70px;
+    margin-top: 8px;
+}
+.iconos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container-menu{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.26);
+    top:0;
+}
+
+nav  div > ul{
+    
+    height: 100%;
+    display: flex;
+}
+nav  div  ul  li{
+   
+    height: 100%;
+    list-style: none;
+    position: center;
+    align-items: center;
+
+}
+nav  div > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 14px;
+    font-size: 15px;
+    transition: all 300ms ease;
+}
+nav  div > ul > li > a:hover{
+    transform: scale(1.05);
+    background-color: rgba(255, 238, 233, 0.842);
+    box-shadow: 0px 0px 4px 0px rgb(211, 211, 211);
+}
+
+nav ul li ul{
+   width: 180px;
+   display: flex;
+   flex-direction: column;
+   background-color: white;
+   position: absolute;
+   top: 90px;
+   left: auto;
+   padding: 14px 0px;
+   visibility: hidden;
+   opacity: 0;
+   box-shadow: 0px 0px 10px 0px gainsboro;
+   z-index: 10;
+   transition: all 300ms ease; 
+}
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+nav ul li ul::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent ;
+    border-right: 12px solid transparent ;
+    border-bottom: 12px solid white ;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+nav ul li ul li a{
+    display: block;
+    color: black;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+nav ul li ul li a:hover{
+    background: rgba(255, 238, 233, 0.842);
+    color: black;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px gainsboro;
+}
+.barraNavegacion {
+    margin-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.315);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.315);
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.733);
+}
+.barraNavegacion a {
+  color: rgba(0, 0, 0, 0.733);
+}
+
+.cantidadCarrito{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px 10px 5px 10px;
+    margin-left: 8px;
+    border-radius: 4px;
+}
+
+/*elementos responsivos*/
+
+.icon__menu{
+    font-size: 26px;
+    color: rgba(0, 0, 0, 0.842);;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items:center;
+}
+
+#label__check{
+    width: 26px;
+    height: 100%;
+    display: none;
+}
+
+#check__menu{
+    display: none;
+}
+.busqueda input{
+    max-width: 0;
+    opacity: 0;
+    border-radius: 10px;
+    height: 30px;
+    padding-left: 10px;
+    border-color: #f9c4c4;
+    transition: .1s ease-in-out all;
+
+}
+
+.busqueda input:focus{
+    outline: none;
+    background-color: #f6dfdfa1;
+    border: 0;
+}
+
+.busqueda.activa input{
+    margin-left: 20px;
+    max-width: 120px;
+    opacity: 1;
+}
+
+@media screen and (max-width:1100px){
+    
+    .logo img{
+        height: 60px;
+        margin-top: 15px;
+    }
+    nav  .menu > ul{
+        flex-direction: column;
+        background-color: white;
+        position: fixed;
+        left:0;
+        top: 80px;
+        width: 100%;
+        height: 300px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav > div > ul > li > a:hover{
+        transform: scale(1);
+    }
+
+    nav ul li ul{
+        left: 150px;
+    }
+    nav > div > ul > li:nth-child(1) > ul{
+        top: 35px;
+    }
+    nav > div > ul > li:nth-child(2) > ul{
+        top: 90px;
+    }
+    nav > div > ul > li:nth-child(3) > ul{
+        top: 140px;
+    }
+    nav > div > ul > li:nth-child(4) > ul{
+        top: 190px;
+    }
+    #label__check{
+        display: block;
+    }
+    .icon__menu{
+        display: flex;
+    }
+
+    #check__menu:checked ~ ul{
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+
+    }
+    
+}

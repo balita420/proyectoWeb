@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+/*general*/
+main{
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    justify-content: space-around;
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px;
+    background-color: rgb(255, 255, 255);
+}
+li{
+   list-style: none; 
+}
+/*slider*/
+.slider{
+    width: 100%;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    animation: cambio 10s infinite alternate linear;
+    width: 400%;
+}
+.slider li{
+    width: 100%;
+}
+.slider img{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+
+}
+/*FOTO PIE*/
+.fotoPie{
+    height: 612px;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+}
+.fotoPie img{
+    height: 100%;
+    vertical-align:middle;
+    filter: blur(4px);
+}
+.fotoPie div{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.fotoPie div h1{
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+.fotoPie div p{
+    margin: 35px;
+    color: white;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+.fotoPie div input{
+   background-color: rgba(255, 255, 255, 0);
+   border: 1px solid white;
+   width: 400px;
+   height: 45px;
+   padding-left: 10px;
+   caret-color: white;
+   color: white;
+}
+.fotoPie div input:focus{
+    border-color: white;
+    outline: 0 none;
+}
+.fotoPie div input::placeholder{
+    color: white;
+    font-size: 16px;
+ }
+ .fotoPie div button{
+    background-color: white;
+    border: 1px solid white;
+    width: 150px;
+    height: 45px;
+    letter-spacing: 2px;
+    margin: 20px;
+ }
+@keyframes cambio {
+    0%{margin-left:0;}
+    20%{margin-left: 0;}
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.tarjetasContent{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+   
+}
+
+.tarjetasContent figure{
+    margin: 15px;
+    width: 250px;
+}
+
+.producto-nombre-precio img{
+    width: 100%;
+}
+.producto-nombre-precio:hover img{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.producto-nombre-precio figcaption{
+    padding-left: 35px;
+    text-align: center;
+    width: 220px;
+    height: auto;
+    margin-top: 15px;
+}
+figcaption a{
+    font-size: 20px;
+    letter-spacing: 3px;
+    
+}
+figcaption p{
+    font-size: 15px;
+    margin: 8px;
+    letter-spacing: 4px;
+}
+
+
+/*view all products*/
+.boton{
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0px;
+    
+}
+.boton  a {
+    color: white;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    padding: 12px;
+}
+
+/*nivel 3*/
+
+.tituloSeparador{
+    text-align: center;
+    margin: 80px;
+}
+.tituloSeparador p{
+    color: rgba(0, 0, 0, 0.74);
+    font-size: 14px;
+    margin: 20px;
+    
+}
+.tituloSeparador h7 {
+    letter-spacing: 6px;
+    font-size: 20px;
+}
+
+.nivel3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+.contenedorImagenLarga img{
+    width: 300px;
+}
+
+.nivel3 .tarjetasContent{
+    margin-top: 100px;
+    margin-left: 50px;
+}

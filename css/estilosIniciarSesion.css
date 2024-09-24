@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+body{
+  background: rgb(255, 255, 255);
+}
+main{
+  padding-top: 150px;
+  padding-bottom: 150px;
+  justify-content: center;
+  text-align: center;
+}
+
+.from-group{
+  display: inline-block;
+  background:#ffffff;
+}
+.from-group h3{
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+.from-group p{
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.contenido{
+  display: block;
+  
+}
+.emailcontraseña{
+  height: 20px;
+  margin: 40px;
+  margin-bottom: 60px;
+}
+.emailcontraseña .input-field{
+  height: 47px;
+  width: 440px;
+  font-size: 15px;
+}
+.recordarContraseña{
+  text-align: left;
+  margin-left: 40px;
+  font-size: 13px;
+}
+.recordarContraseña span{
+  margin: 5px;
+}
+.iniciarSesion{
+  margin-top: 30px;
+}
+.iniciarSesion button{
+  width: 440px;
+  padding: 12px;
+  background-color: black;
+  color: #ffffff;
+}
+.iniciarSesion button:hover{
+  width: 440px;
+  padding: 12px;
+  border: 1px solid black;
+  background-color: rgb(248, 244, 244);
+  color: #000000;
+  transition: 0.8s;
+}
+.crearCuenta{
+  display: inline-flex;
+  padding: 20px;
+
+}
+.crearCuenta spam{
+  display:inline-flex;
+  margin-right: 20px;
+  padding: 2px;
+}
+
+.crearCuenta button{
+  width: 130px;
+  padding: 4px;
+  background-color: rgb(255, 255, 255);
+  
+  
+}
+
+
+
+
